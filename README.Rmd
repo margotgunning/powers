@@ -27,6 +27,9 @@ This can also be seen in the vignette, which I also haven't finished yet
 ```{r}
 powers::square(2)
 #>[1] 4
+
+powers::cube(9)
+#>[1] 729
 ```
 
 # For development

@@ -1,10 +1,10 @@
-#' Square a vector
+#' Raise a vector to a power
 #'
-#' That's it -- this function just squares a vector.
+#' That's it -- this function just computes a power of a vector.
 #'
-#' @param x The vector to be squared.
+#' @param x The vector to be modified
 #'
-#' @return A vector that is the square of \code{x}.
+#' @return A vector rasied to a selected power \code{x}.
 #'
 #' @details
 #' This function isn't complicated.
@@ -14,8 +14,8 @@
 #'
 #' Here are some reasons why putting a list in this section is excessive:
 #' \itemize{
-#'      \item This \code{square} function is quite simple.
-#'      \item There's nothing else to say about \code{square}.
+#'      \item This \code{square}, and \code{cube} functions are quite simple.
+#'      \item There's nothing else to say about \code{square} and \code{cube}.
 #' }
 #'
 #' @examples
@@ -30,5 +30,7 @@ square <- function(x, plot_it=FALSE){
 #' @export
 cube <- function(x, plot_it=FALSE){
 	pow(x,y=3,plot_it=plot_it)
+
+
 }
 

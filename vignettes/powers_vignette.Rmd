@@ -20,7 +20,8 @@ The main goal of this R package is to compute powers without having to use ```^`
 
 ```{r}
 library(powers)
-square(2)
+square(2, plot_it=FALSE)
+cube(3, plot_it=FALSE)
 #cube(3)
 ```
 

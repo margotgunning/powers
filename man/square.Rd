@@ -2,18 +2,21 @@
 % Please edit documentation in R/square.R
 \name{square}
 \alias{square}
-\title{Square a vector}
+\alias{cube}
+\title{Raise a vector to a power}
 \usage{
-square(x)
+square(x, plot_it = FALSE)
+
+cube(x, plot_it = FALSE)
 }
 \arguments{
-\item{x}{The vector to be squared.}
+\item{x}{The vector to be modified}
 }
 \value{
-A vector that is the square of \code{x}.
+A vector rasied to a selected power \code{x}.
 }
 \description{
-That's it -- this function just squares a vector.
+That's it -- this function just computes a power of a vector.
 }
 \details{
 This function isn't complicated.
@@ -23,8 +26,8 @@ section!
 
 Here are some reasons why putting a list in this section is excessive:
 \itemize{
-     \item This \code{square} function is quite simple.
-     \item There's nothing else to say about \code{square}.
+     \item This \code{square}, and \code{cube} functions are quite simple.
+     \item There's nothing else to say about \code{square} and \code{cube}.
 }
 }
 \examples{
