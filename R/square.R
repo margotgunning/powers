@@ -23,6 +23,6 @@
 #' square(-5)
 #' @export
 square <- function(x){
-	pow(x, y=2, plot_it=plot_it)
+	pow(x, y=2, plot_it=TRUE)
 }
 
