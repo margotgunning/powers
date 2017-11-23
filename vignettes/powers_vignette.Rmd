@@ -1,0 +1,34 @@
+---
+title: "Powers"
+author: "Me"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Powers}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Intro
+
+This R package was built in STAT545 at UBC, and is intended for teaching/learning purposes only
+
+The main goal of this R package is to compute powers without having to use ```^``` or ```**```
+
+# Example execution
+
+```{r}
+library(powers)
+square(2)
+#cube(3)
+```
+
+## We can apply powers in lists of vectors too!
+
+```{r}
+listy_list <- list(4,2,9,0.2,-0.8,-0.4)
+lapply(listy_list, square)
+```
+
+And That's All Folks
