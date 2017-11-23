@@ -22,7 +22,13 @@
 #' square(1:10)
 #' square(-5)
 #' @export
-square <- function(x){
-	pow(x, y=2, plot_it=TRUE)
+square <- function(x, plot_it=FALSE){
+	pow(x, y=2, plot_it=plot_it)
+}
+
+#' @rdname square
+#' @export
+cube <- function(x, plot_it=FALSE){
+	pow(x,y=3,plot_it=plot_it)
 }
 
