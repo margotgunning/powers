@@ -14,15 +14,42 @@ vignette: >
 
 This R package was built in STAT545 at UBC, and is intended for teaching/learning purposes only
 
-The main goal of this R package is to compute powers without having to use ```^``` or ```**```
+The main goal of this R package is to compute power and logarithmic transformations without having to use ```^``` or ```**```
+
+# Functions
+
+There are four functions in this package:
+	+ ```square```:
+		+ input: value to be squared
+		+ output: squared value
+	+ ```cube```:
+		+ input: value to be cubed
+		+ output: cubed value
+	+ ```box_cox_transform```:
+		+ input: response to be transformed; transformation parameter
+		+ output: transfromed response
+	+ ```inverse_box_cox_transfrom```:
+		+ input: transfromed response to be undone; transformation parameter
+		+ output: raw response
 
 # Example execution
 
 ```{r}
 library(powers)
 square(2, plot_it=FALSE)
+#[1] 4
 cube(3, plot_it=FALSE)
-#cube(3)
+#[1] 9
+
+box_cox_transform(2, 0.5)
+#[1] 0.8284271
+box_cox_transform(2, 0)
+#[1] 0.6931472
+
+inverse_box_cox_transform(0.8284271, 0.5)
+#[1] 2
+inverse_box_cox_transform(0.6931472, 0)
+#[1] 2
 ```
 
 ## We can apply powers in lists of vectors too!
@@ -30,6 +57,9 @@ cube(3, plot_it=FALSE)
 ```{r}
 listy_list <- list(4,2,9,0.2,-0.8,-0.4)
 lapply(listy_list, square)
+
+lapply(listy_list, box_cox_transform, t_param=0.5)
+
 ```
 
 And That's All Folks

@@ -21,6 +21,8 @@
 #' @examples
 #' square(1:10)
 #' square(-5)
+#' cube(3)
+#' cube(-9)
 #' @export
 square <- function(x, plot_it=FALSE){
 	pow(x, y=2, plot_it=plot_it)
@@ -33,4 +35,5 @@ cube <- function(x, plot_it=FALSE){
 
 
 }
+
 

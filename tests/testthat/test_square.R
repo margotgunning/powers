@@ -1,4 +1,4 @@
-context("Squaring non-numerics")
+context("Squaring and cubing non-numerics")
 
 test_that("At least numeric values work.", {
 	num_vec <- c(0, -4.6, 3.4)
@@ -9,4 +9,10 @@ test_that("At least numeric values work.", {
 test_that("Logicals automatically convert to numeric.", {
 	logic_vec <- c(TRUE, TRUE, FALSE)
 	expect_identical(square(logic_vec), logic_vec^2)
+})
+
+test_that("The cube fuction also works for numeric values.", {
+	num_vec2 <- c(1,3,6)
+	expect_identical(cube(numeric(0)), numeric(0))
+	expect_identical(cube(num_vec2), num_vec2^3)
 })

@@ -30,11 +30,19 @@ powers::square(2)
 
 powers::cube(9)
 #>[1] 729
+
+powers::box_cox_transform(2,-1)
+#>[1] 0.5
+
+powers::inverse_box_cox_transform(0.5,-1)
+#>[1] 2
 ```
 
 # For development
 
 Not much to say here because this is a learning tool.
 
-There is an internal function called pow that is the machinery for the sqaure function, and functions yet to come ie) cube
+There is an internal function called pow that is the machinery for the sqaure function, and cube function.
+
+The box-cox transformation functions do not use the internal function pow.  Something else I wanted to look at was adding in a condition to make a dataframe in the input for response and t_params had lenghts greater than one; but I did not have time to do this.
 
