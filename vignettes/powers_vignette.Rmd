@@ -60,7 +60,7 @@ sapply(listy_list, square)
 #>[1] 16.00, 4.00, 81.00, 0.04, 0.64, 0.16
 
 lapply(listy_list, box_cox_transform, t_param=0.5)
-#[[1]]
+#> [[1]]
 #[1] 2
 
 #[[2]]
