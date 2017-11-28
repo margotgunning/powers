@@ -22,7 +22,7 @@ devtools::install_github("margotgunning/powers")
 
     ## "C:/PROGRA~1/R/R-34~1.2/bin/x64/R" --no-site-file --no-environ --no-save  \
     ##   --no-restore --quiet CMD INSTALL  \
-    ##   "C:/Users/Margot/AppData/Local/Temp/RtmpmiUFiX/devtools3f5c74941042/margotgunning-powers-ea7fd18"  \
+    ##   "C:/Users/Margot/AppData/Local/Temp/RtmpqosJGk/devtools2e64671024f8/margotgunning-powers-7f658c3"  \
     ##   --library="C:/Users/Margot/Documents/R/win-library/3.4"  \
     ##   --install-tests
 

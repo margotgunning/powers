@@ -37,28 +37,47 @@ There are four functions in this package:
 ```{r}
 library(powers)
 square(2, plot_it=FALSE)
-#[1] 4
+#>[1] 4
 cube(3, plot_it=FALSE)
-#[1] 9
+#>[1] 9
 
 box_cox_transform(2, 0.5)
-#[1] 0.8284271
+#>[1] 0.8284271
 box_cox_transform(2, 0)
-#[1] 0.6931472
+#>[1] 0.6931472
 
 inverse_box_cox_transform(0.8284271, 0.5)
-#[1] 2
+#>[1] 2
 inverse_box_cox_transform(0.6931472, 0)
-#[1] 2
+#>[1] 2
 ```
 
 ## We can apply powers in lists of vectors too!
 
 ```{r}
 listy_list <- list(4,2,9,0.2,-0.8,-0.4)
-lapply(listy_list, square)
+sapply(listy_list, square)
+#>[1] 16.00, 4.00, 81.00, 0.04, 0.64, 0.16
 
 lapply(listy_list, box_cox_transform, t_param=0.5)
+#[[1]]
+#[1] 2
+
+#[[2]]
+#[1] 0.8284271
+
+#[[3]]
+#[1] 4
+
+#[[4]]
+#[1] -1.105573
+
+#[[5]]
+#[1] "Number not real, check input"
+
+#[[6]]
+#[1] "Number not real, check input"
+
 
 ```
 
